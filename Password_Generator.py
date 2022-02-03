@@ -2,7 +2,7 @@ while True:
 
     import random
 
-    print("Welcome to the PyPassword Generator!\n")
+    print("Welcome to the my Password Generator!\n")
     letter_count = int(input("How many letters would you like in your password?\n"))
     symbol_count = int(input("How many symbols would you like\n"))
     number_count = int(input("How many numbers?\n"))
