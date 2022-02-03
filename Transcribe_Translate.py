@@ -1,6 +1,6 @@
 while True:
 
-    # Takes string input of codons
+    # Takes string input of sequence
     nuc = input("Enter query sequence.\n")
 
     transcribe_dict = {"a":"u","t":"a","g":"c","c":"g"}
@@ -31,9 +31,8 @@ while True:
     joined_transcript="".join(transcribe_result)
     print(f"\nYour queried sequence: {nuc}")
     print(f"\nQuery transcript: {joined_transcript}")
-
-    #range(0,len(joined_transcript)-(3+len(joined_transcript)%3),3):
-
+    
+    #Split into codons to translate by referencing dictionary
     for x in range(0,len(joined_transcript)-(3+len(joined_transcript)%3),3):
         translate_result.append(translate_dict[joined_transcript[x:x+3]])
     final= "-".join(translate_result)
